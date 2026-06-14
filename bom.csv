@@ -1,0 +1,15 @@
+category,item,qty,est_cost_usd,supplier,link,status,notes
+Drivetrain,Used hoverboard (donor),1,120,,,not ordered,Source of hub motors + 36V battery + controller + charger
+Drivetrain,Caster wheels (heavy duty),2,30,,,not ordered,Fore/aft balance; rate for full loaded weight
+Electronics,ESP32 dev board,1,10,,,not ordered,Bluetooth Classic for Wiimote + UART out
+Electronics,Buck converter 36V->5V,1,8,,,not ordered,Powers ESP32 from main battery
+Electronics,Inline fuse + holder,1,8,,,not ordered,On battery positive lead
+Electronics,Main power switch,1,10,,,not ordered,High-current rated
+Electronics,E-stop button,1,12,,,not ordered,Kills 36V independent of firmware
+Electronics,XT60/XT90 connectors,1,10,,,not ordered,No bare li-ion leads
+Electronics,Wii remote,1,15,,,not ordered,Plus optional Nunchuk for analog throttle
+Frame,Steel/aluminum base plate stock,1,40,,,not ordered,Mount axle + casters + seat
+Frame,Hardware (bolts/brackets),1,25,,,not ordered,
+Frame,Low seat / cushion,1,30,,,not ordered,Keep center of gravity low
+Frame,Wheel guards / mesh,1,20,,,not ordered,Cover spokes; eye-level visibility band
+Costume,Oscar shell + decoration,1,40,,,not ordered,Green fur, googly eyes, etc.

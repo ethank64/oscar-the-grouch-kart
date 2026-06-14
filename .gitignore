@@ -1,0 +1,15 @@
+# Build artifacts
+build/
+*.o
+*.bin
+*.elf
+
+# PlatformIO / Arduino
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Editor / OS
+.DS_Store
+.vscode/
+*.swp
