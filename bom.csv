@@ -1,15 +1,15 @@
 category,item,qty,est_cost_usd,supplier,link,status,notes
-Drivetrain,Used hoverboard (donor),1,120,,,not ordered,Source of hub motors + 36V battery + controller + charger
-Drivetrain,Caster wheels (heavy duty),2,30,,,not ordered,Fore/aft balance; rate for full loaded weight
-Electronics,ESP32 dev board,1,10,,,not ordered,Bluetooth Classic for Wiimote + UART out
-Electronics,Buck converter 36V->5V,1,8,,,not ordered,Powers ESP32 from main battery
-Electronics,Inline fuse + holder,1,8,,,not ordered,On battery positive lead
-Electronics,Main power switch,1,10,,,not ordered,High-current rated
-Electronics,E-stop button,1,12,,,not ordered,Kills 36V independent of firmware
-Electronics,XT60/XT90 connectors,1,10,,,not ordered,No bare li-ion leads
-Electronics,Wii remote,1,15,,,not ordered,Plus optional Nunchuk for analog throttle
-Frame,Steel/aluminum base plate stock,1,40,,,not ordered,Mount axle + casters + seat
-Frame,Hardware (bolts/brackets),1,25,,,not ordered,
-Frame,Low seat / cushion,1,30,,,not ordered,Keep center of gravity low
-Frame,Wheel guards / mesh,1,20,,,not ordered,Cover spokes; eye-level visibility band
-Costume,Oscar shell + decoration,1,40,,,not ordered,Green fur, googly eyes, etc.
+Drivetrain,Hoverboard (donor),1,130,Amazon,https://www.amazon.com/LIEAGLE-Hoverboard-Balancing-Scooter-Bluetooth/dp/B0B81QDVZM,not ordered,Source of 2x hub motors + 36V battery + controller + charger. CONFIRM mainboard is STM32F103 or GD32F103 before buying so FOC firmware works (see firmware-compatibility wiki in notes)
+Drivetrain,Heavy-duty swivel casters 4in,2,35,Amazon,https://www.amazon.com/4-inch-caster-wheels-heavy-duty/s?k=4+inch+caster+wheels+heavy+duty,not ordered,Swivel (not rigid) so it can pivot; pick a set rated well above full loaded weight
+Electronics,ESP32 dev board (HiLetgo 2-pack),1,13,Amazon,https://www.amazon.com/ESP-WROOM-32-Development-Dual-Mode-Microcontroller-Integrated/dp/B0FRD82Q54,not ordered,ESP-WROOM-32; Bluetooth Classic for Wiimote + UART out. Spare in the 2-pack
+Electronics,Buck converter 8-60V to 5V 5A,1,11,Amazon,https://www.amazon.com/Converter-DC-DC-8-60V-Supply-Module/dp/B07N62QBNK,not ordered,MUST accept >42V in (36V pack peaks at 42V charged). This 8-60V module is safe; a 4-38V module is NOT
+Electronics,Inline fuse holder 10AWG + fuses,1,9,Amazon,https://www.amazon.com/Gauge-Fuse-Holder-Automotive-Motorcycle/dp/B0CHRQFD79,not ordered,On battery positive lead; size fuse to controller draw (~30-40A)
+Electronics,Main disconnect switch 50A,1,11,Amazon,https://www.amazon.com/DaierTek-Automotive-Toggle-Position-Terminal/dp/B07SJS8BFM,not ordered,Breaks the 36V main line; rated 50A
+Electronics,E-stop mushroom button,1,11,Amazon,https://www.amazon.com/Gebildet-2pcs-Emergency-Button-Mushroom/dp/B0D86NMXYC,not ordered,Wire the NC contact into the controller ENABLE / dead-man line (10A button can't break full motor current directly)
+Electronics,XT60 connectors (5 pairs),1,9,Amazon,https://www.amazon.com/Pairs-Connector-Female-Silicon-Battery/dp/B085HF31K7,not ordered,No bare li-ion leads; pull-apart for transport/charging
+Electronics,Wii remote + Nunchuk bundle,1,20,Amazon,https://www.amazon.com/2-Pack-REMOTE-NUNCHUK-Controller-Nintendo-Wii/dp/B07L5TQ62Y,not ordered,Nunchuk stick gives analog throttle option. Buy genuine Nintendo if pairing is flaky
+Frame,Steel/aluminum base plate stock,1,40,local/hardware store,,not ordered,Mount axle + casters + seat; size to can inner diameter
+Frame,Hardware (bolts/brackets),1,25,local/hardware store,,not ordered,Grade-appropriate bolts; thread-lock the wheel mounts
+Frame,Low seat / cushion,1,30,,,not ordered,Keep center of gravity low; sit, don't stand
+Frame,Wheel guards / mesh,1,20,local/hardware store,,not ordered,Cover spokes; cut an eye-level visibility band
+Costume,Oscar shell + decoration,1,40,craft store,,not ordered,Green fur, googly eyes, fuzzy brows
