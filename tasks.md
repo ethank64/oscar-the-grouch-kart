@@ -4,14 +4,15 @@ Paste these into GitHub Issues (or a Project board) as you go. Roughly ordered;
 later phases depend on earlier ones.
 
 ## Phase 1 — Drivetrain bring-up
-- [ ] Source and tear down a donor hoverboard
-- [ ] Identify the controller board; confirm it's flashable with FOC firmware
-- [ ] Flash `EmanuelFeru/hoverboard-firmware-hack-FOC`
-- [ ] Spin both hub motors on the bench via UART `(speed, steer)` commands
-- [ ] Characterize: top speed, current draw, low-speed torque
+- [ ] Order hub motors (confirm hall-sensor version), dual VESC, 48V battery
+- [ ] Wire each hub motor + halls to a VESC channel
+- [ ] Run motor detection in VESC Tool; set current limits and sensored mode
+- [ ] Spin both wheels-up; verify both directions and regen braking
+- [ ] Characterize: top speed, current draw, standstill torque
 
 ## Phase 2 — Mechanical base
-- [ ] Design base plate (center axle for hub wheels + fore/aft casters)
+- [ ] Design base plate (coaxial hub-motor mounts + fore/aft casters)
+- [ ] Fabricate/buy dropout brackets so both axles are aligned
 - [ ] Confirm caster + plate rated for full loaded weight
 - [ ] Mount motors, casters, low seat
 - [ ] Mock-fit base inside the trash can
@@ -20,10 +21,11 @@ later phases depend on earlier ones.
 - [ ] Pair Wii remote to ESP32 (`ESP32Wiimote`); read buttons + accelerometer
 - [ ] Implement drive mix (tilt → steer, button → throttle)
 - [ ] Add dead-man enable, speed cap, slew limiting, link-loss failsafe
-- [ ] Bench test wheels-up end to end (remote → ESP32 → controller → motors)
+- [ ] Set the VESC UART timeout so lost commands coast to zero
+- [ ] Bench test wheels-up end to end (remote → ESP32 → VESC → motors)
 
 ## Phase 4 — Integration
-- [ ] Wire power: battery → fuse → main switch → e-stop → controller; buck → ESP32
+- [ ] Wire power per docs/electrical.md: battery → fuse → anti-spark switch → VESC; buck → ESP32
 - [ ] Mount electronics in the can
 - [ ] Tethered low-speed drive test (no rider)
 - [ ] First rider test at walking pace, open area
